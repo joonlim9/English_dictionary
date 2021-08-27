@@ -18,6 +18,8 @@ def print_def(word):
             return english_dictionary[get_close_matches(word, english_dictionary.keys())[0]]
         elif closest == "N":
             return "The word you're looking for does not exist"
+        else:
+            return "Wrong entry, This program now terminates"
     else:
         return "The word you're looking for does not exist"
 
